@@ -3059,9 +3059,6 @@ purgecss@^4.0.3:
 
 "purgescss@file:../../purgescss":
   version "1.0.1"
-  dependencies:
-    webpack "^5.64.2"
-    webpack-cli "^4.9.1"
 
 qs@6.7.0:
   version "6.7.0"

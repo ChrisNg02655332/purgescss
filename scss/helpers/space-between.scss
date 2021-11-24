@@ -1,0 +1,70 @@
+@use "sass:string";
+@use "sass:math";
+
+$space-values: 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14,
+  16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96;
+
+@for $i from 1 through length($space-values) {
+  $space-value: nth($space-values, $i);
+  $name: #{$space-value};
+
+  @if str-index($name, ".") {
+    $name: str-insert($name, "\\", str-index($name, "."));
+  }
+  $value: math.div($space-value, 4);
+
+  .space-x-#{$name} > :not([hidden]) ~ :not([hidden]) {
+    --space-x-reverse: 0;
+    margin-right: calc(#{$value}rem * var(--space-x-reverse)) !important;
+    margin-left: calc(
+      #{$value}rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+  }
+
+  .-space-x-#{$name} > :not([hidden]) ~ :not([hidden]) {
+    --space-x-reverse: 0;
+    margin-right: calc(-#{$value}rem * var(--space-x-reverse)) !important;
+    margin-left: calc(
+      -#{$value}rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+  }
+
+  .space-y-#{$name} > :not([hidden]) ~ :not([hidden]) {
+    --space-y-reverse: 0;
+    margin-top: calc(
+      #{$value}rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+    margin-bottom: calc(#{$value}rem * var(--space-y-reverse)) !important;
+  }
+  .-space-y-#{$name} > :not([hidden]) ~ :not([hidden]) {
+    --space-y-reverse: 0;
+    margin-top: calc(
+      -#{$value}rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+    margin-bottom: calc(-#{$value}rem * var(--space-y-reverse)) !important;
+  }
+}
+
+.space-x-px > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(1px * var(--space-x-reverse));
+  margin-left: calc(1px * calc(1 - var(--space-x-reverse)));
+}
+
+.-space-x-px > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-1px * var(--space-x-reverse));
+  margin-left: calc(-1px * calc(1 - var(--space-x-reverse)));
+}
+
+.space-y-px > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(1px * calc(1 - var(--space-y-reverse)));
+  margin-bottom: calc(1px * var(--space-y-reverse));
+}
+
+.-space-y-px > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(-1px * calc(1 - var(--space-y-reverse)));
+  margin-bottom: calc(-1px * var(--space-y-reverse));
+}

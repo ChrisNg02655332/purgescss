@@ -32,7 +32,7 @@ unselectable, .button {
   user-select: none;
 }
 
-arrow, .navbar-link:not(.is-arrowless)::after {
+arrow, .navbar-link:not(.arrowless)::after {
   border: 3px solid transparent;
   border-radius: 2px;
   border-right: 0;
@@ -162,6 +162,1219 @@ reset, .navbar-burger {
   font-size: 1em;
   margin: 0;
   padding: 0;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(0rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      0rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-0rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -0rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      0rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(0rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -0rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-0rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-0\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(0.125rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      0.125rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-0\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-0.125rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -0.125rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-0\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      0.125rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(0.125rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-0\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -0.125rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-0.125rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      0.25rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-0.25rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -0.25rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      0.25rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(0.25rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -0.25rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-0.25rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(0.375rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      0.375rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-0.375rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -0.375rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      0.375rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(0.375rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -0.375rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-0.375rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      0.5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-0.5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -0.5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      0.5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(0.5rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -0.5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-0.5rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-2\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(0.625rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      0.625rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-2\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-0.625rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -0.625rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-2\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      0.625rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(0.625rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-2\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -0.625rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-0.625rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      0.75rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-0.75rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -0.75rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      0.75rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(0.75rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -0.75rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-0.75rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-3\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(0.875rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      0.875rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-3\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-0.875rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -0.875rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-3\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      0.875rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(0.875rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-3\.5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -0.875rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-0.875rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(1rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      1rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-1rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -1rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      1rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(1rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -1rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-1rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      1.25rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-1.25rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -1.25rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      1.25rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(1.25rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -1.25rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-1.25rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      1.5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-1.5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -1.5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      1.5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(1.5rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -1.5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-1.5rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-7 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(1.75rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      1.75rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-7 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-1.75rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -1.75rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      1.75rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(1.75rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -1.75rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-1.75rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(2rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      2rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-2rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -2rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      2rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(2rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -2rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-2rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-9 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(2.25rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      2.25rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-9 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-2.25rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -2.25rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-9 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      2.25rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(2.25rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-9 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -2.25rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-2.25rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      2.5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-2.5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -2.5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      2.5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(2.5rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -2.5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-2.5rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-11 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(2.75rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      2.75rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-11 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-2.75rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -2.75rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-11 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      2.75rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(2.75rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-11 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -2.75rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-2.75rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(3rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      3rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-3rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -3rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      3rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(3rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -3rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-3rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-14 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(3.5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      3.5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-14 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-3.5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -3.5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-14 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      3.5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(3.5rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-14 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -3.5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-3.5rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-16 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(4rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      4rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-16 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-4rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -4rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-16 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      4rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(4rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-16 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -4rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-4rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-20 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-20 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-5rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -5rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-20 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(5rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-20 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -5rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-5rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-24 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(6rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      6rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-24 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-6rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -6rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-24 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      6rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(6rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-24 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -6rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-6rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-28 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(7rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      7rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-28 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-7rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -7rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-28 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      7rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(7rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-28 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -7rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-7rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-32 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(8rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      8rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-32 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-8rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -8rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-32 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      8rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(8rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-32 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -8rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-8rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-36 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(9rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      9rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-36 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-9rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -9rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-36 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      9rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(9rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-36 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -9rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-9rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-40 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(10rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      10rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-40 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-10rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -10rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-40 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      10rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(10rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-40 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -10rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-10rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-44 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(11rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      11rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-44 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-11rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -11rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-44 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      11rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(11rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-44 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -11rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-11rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-48 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(12rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      12rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-48 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-12rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -12rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-48 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      12rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(12rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-48 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -12rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-12rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-52 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(13rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      13rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-52 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-13rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -13rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-52 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      13rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(13rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-52 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -13rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-13rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-56 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(14rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      14rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-56 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-14rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -14rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-56 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      14rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(14rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-56 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -14rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-14rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-60 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(15rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      15rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-60 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-15rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -15rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-60 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      15rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(15rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-60 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -15rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-15rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-64 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(16rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      16rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-64 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-16rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -16rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-64 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      16rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(16rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-64 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -16rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-16rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-72 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(18rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      18rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-72 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-18rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -18rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-72 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      18rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(18rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-72 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -18rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-18rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-80 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(20rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      20rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-80 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-20rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -20rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-80 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      20rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(20rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-80 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -20rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-20rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-96 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(24rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      24rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.-space-x-96 > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-24rem * var(--space-x-reverse)) !important;
+  margin-left: calc(
+      -24rem * calc(1 - var(--space-x-reverse))
+    ) !important;
+}
+
+.space-y-96 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      24rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(24rem * var(--space-y-reverse)) !important;
+}
+
+.-space-y-96 > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(
+      -24rem * calc(1 - var(--space-y-reverse))
+    ) !important;
+  margin-bottom: calc(-24rem * var(--space-y-reverse)) !important;
+}
+
+.space-x-px > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(1px * var(--space-x-reverse));
+  margin-left: calc(1px * (1 - var(--space-x-reverse)));
+}
+
+.-space-x-px > :not([hidden]) ~ :not([hidden]) {
+  --space-x-reverse: 0;
+  margin-right: calc(-1px * var(--space-x-reverse));
+  margin-left: calc(-1px * (1 - var(--space-x-reverse)));
+}
+
+.space-y-px > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(1px * (1 - var(--space-y-reverse)));
+  margin-bottom: calc(1px * var(--space-y-reverse));
+}
+
+.-space-y-px > :not([hidden]) ~ :not([hidden]) {
+  --space-y-reverse: 0;
+  margin-top: calc(-1px * (1 - var(--space-y-reverse)));
+  margin-bottom: calc(-1px * var(--space-y-reverse));
 }
 
 html,
@@ -1512,562 +2725,562 @@ table th {
   position: relative;
   z-index: 30;
 }
-.navbar.is-white {
+.navbar.white {
   background-color: white;
   color: #0a0a0a;
 }
-.navbar.is-white .navbar-brand > .navbar-item,
-.navbar.is-white .navbar-brand .navbar-link {
+.navbar.white .navbar-brand > .navbar-item,
+.navbar.white .navbar-brand .navbar-link {
   color: #0a0a0a;
 }
-.navbar.is-white .navbar-brand > a.navbar-item:focus, .navbar.is-white .navbar-brand > a.navbar-item:hover, .navbar.is-white .navbar-brand > a.navbar-item.is-active,
-.navbar.is-white .navbar-brand .navbar-link:focus,
-.navbar.is-white .navbar-brand .navbar-link:hover,
-.navbar.is-white .navbar-brand .navbar-link.is-active {
+.navbar.white .navbar-brand > a.navbar-item:focus, .navbar.white .navbar-brand > a.navbar-item:hover, .navbar.white .navbar-brand > a.navbar-item.active,
+.navbar.white .navbar-brand .navbar-link:focus,
+.navbar.white .navbar-brand .navbar-link:hover,
+.navbar.white .navbar-brand .navbar-link.active {
   background-color: #f2f2f2;
   color: #0a0a0a;
 }
-.navbar.is-white .navbar-brand .navbar-link::after {
+.navbar.white .navbar-brand .navbar-link::after {
   border-color: #0a0a0a;
 }
-.navbar.is-white .navbar-burger {
+.navbar.white .navbar-burger {
   color: #0a0a0a;
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-white .navbar-start > .navbar-item,
-.navbar.is-white .navbar-start .navbar-link,
-.navbar.is-white .navbar-end > .navbar-item,
-.navbar.is-white .navbar-end .navbar-link {
+  .navbar.white .navbar-start > .navbar-item,
+.navbar.white .navbar-start .navbar-link,
+.navbar.white .navbar-end > .navbar-item,
+.navbar.white .navbar-end .navbar-link {
     color: #0a0a0a;
   }
-  .navbar.is-white .navbar-start > a.navbar-item:focus, .navbar.is-white .navbar-start > a.navbar-item:hover, .navbar.is-white .navbar-start > a.navbar-item.is-active,
-.navbar.is-white .navbar-start .navbar-link:focus,
-.navbar.is-white .navbar-start .navbar-link:hover,
-.navbar.is-white .navbar-start .navbar-link.is-active,
-.navbar.is-white .navbar-end > a.navbar-item:focus,
-.navbar.is-white .navbar-end > a.navbar-item:hover,
-.navbar.is-white .navbar-end > a.navbar-item.is-active,
-.navbar.is-white .navbar-end .navbar-link:focus,
-.navbar.is-white .navbar-end .navbar-link:hover,
-.navbar.is-white .navbar-end .navbar-link.is-active {
+  .navbar.white .navbar-start > a.navbar-item:focus, .navbar.white .navbar-start > a.navbar-item:hover, .navbar.white .navbar-start > a.navbar-item.active,
+.navbar.white .navbar-start .navbar-link:focus,
+.navbar.white .navbar-start .navbar-link:hover,
+.navbar.white .navbar-start .navbar-link.active,
+.navbar.white .navbar-end > a.navbar-item:focus,
+.navbar.white .navbar-end > a.navbar-item:hover,
+.navbar.white .navbar-end > a.navbar-item.active,
+.navbar.white .navbar-end .navbar-link:focus,
+.navbar.white .navbar-end .navbar-link:hover,
+.navbar.white .navbar-end .navbar-link.active {
     background-color: #f2f2f2;
     color: #0a0a0a;
   }
-  .navbar.is-white .navbar-start .navbar-link::after,
-.navbar.is-white .navbar-end .navbar-link::after {
+  .navbar.white .navbar-start .navbar-link::after,
+.navbar.white .navbar-end .navbar-link::after {
     border-color: #0a0a0a;
   }
-  .navbar.is-white .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-white .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-white .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.white .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.white .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.white .navbar-item.has-dropdown.active .navbar-link {
     background-color: #f2f2f2;
     color: #0a0a0a;
   }
-  .navbar.is-white .navbar-dropdown a.navbar-item.is-active {
+  .navbar.white .navbar-dropdown a.navbar-item.active {
     background-color: white;
     color: #0a0a0a;
   }
 }
-.navbar.is-black {
+.navbar.black {
   background-color: #0a0a0a;
   color: white;
 }
-.navbar.is-black .navbar-brand > .navbar-item,
-.navbar.is-black .navbar-brand .navbar-link {
+.navbar.black .navbar-brand > .navbar-item,
+.navbar.black .navbar-brand .navbar-link {
   color: white;
 }
-.navbar.is-black .navbar-brand > a.navbar-item:focus, .navbar.is-black .navbar-brand > a.navbar-item:hover, .navbar.is-black .navbar-brand > a.navbar-item.is-active,
-.navbar.is-black .navbar-brand .navbar-link:focus,
-.navbar.is-black .navbar-brand .navbar-link:hover,
-.navbar.is-black .navbar-brand .navbar-link.is-active {
+.navbar.black .navbar-brand > a.navbar-item:focus, .navbar.black .navbar-brand > a.navbar-item:hover, .navbar.black .navbar-brand > a.navbar-item.active,
+.navbar.black .navbar-brand .navbar-link:focus,
+.navbar.black .navbar-brand .navbar-link:hover,
+.navbar.black .navbar-brand .navbar-link.active {
   background-color: black;
   color: white;
 }
-.navbar.is-black .navbar-brand .navbar-link::after {
+.navbar.black .navbar-brand .navbar-link::after {
   border-color: white;
 }
-.navbar.is-black .navbar-burger {
+.navbar.black .navbar-burger {
   color: white;
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-black .navbar-start > .navbar-item,
-.navbar.is-black .navbar-start .navbar-link,
-.navbar.is-black .navbar-end > .navbar-item,
-.navbar.is-black .navbar-end .navbar-link {
+  .navbar.black .navbar-start > .navbar-item,
+.navbar.black .navbar-start .navbar-link,
+.navbar.black .navbar-end > .navbar-item,
+.navbar.black .navbar-end .navbar-link {
     color: white;
   }
-  .navbar.is-black .navbar-start > a.navbar-item:focus, .navbar.is-black .navbar-start > a.navbar-item:hover, .navbar.is-black .navbar-start > a.navbar-item.is-active,
-.navbar.is-black .navbar-start .navbar-link:focus,
-.navbar.is-black .navbar-start .navbar-link:hover,
-.navbar.is-black .navbar-start .navbar-link.is-active,
-.navbar.is-black .navbar-end > a.navbar-item:focus,
-.navbar.is-black .navbar-end > a.navbar-item:hover,
-.navbar.is-black .navbar-end > a.navbar-item.is-active,
-.navbar.is-black .navbar-end .navbar-link:focus,
-.navbar.is-black .navbar-end .navbar-link:hover,
-.navbar.is-black .navbar-end .navbar-link.is-active {
+  .navbar.black .navbar-start > a.navbar-item:focus, .navbar.black .navbar-start > a.navbar-item:hover, .navbar.black .navbar-start > a.navbar-item.active,
+.navbar.black .navbar-start .navbar-link:focus,
+.navbar.black .navbar-start .navbar-link:hover,
+.navbar.black .navbar-start .navbar-link.active,
+.navbar.black .navbar-end > a.navbar-item:focus,
+.navbar.black .navbar-end > a.navbar-item:hover,
+.navbar.black .navbar-end > a.navbar-item.active,
+.navbar.black .navbar-end .navbar-link:focus,
+.navbar.black .navbar-end .navbar-link:hover,
+.navbar.black .navbar-end .navbar-link.active {
     background-color: black;
     color: white;
   }
-  .navbar.is-black .navbar-start .navbar-link::after,
-.navbar.is-black .navbar-end .navbar-link::after {
+  .navbar.black .navbar-start .navbar-link::after,
+.navbar.black .navbar-end .navbar-link::after {
     border-color: white;
   }
-  .navbar.is-black .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-black .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-black .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.black .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.black .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.black .navbar-item.has-dropdown.active .navbar-link {
     background-color: black;
     color: white;
   }
-  .navbar.is-black .navbar-dropdown a.navbar-item.is-active {
+  .navbar.black .navbar-dropdown a.navbar-item.active {
     background-color: #0a0a0a;
     color: white;
   }
 }
-.navbar.is-light {
+.navbar.light {
   background-color: whitesmoke;
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar.is-light .navbar-brand > .navbar-item,
-.navbar.is-light .navbar-brand .navbar-link {
+.navbar.light .navbar-brand > .navbar-item,
+.navbar.light .navbar-brand .navbar-link {
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar.is-light .navbar-brand > a.navbar-item:focus, .navbar.is-light .navbar-brand > a.navbar-item:hover, .navbar.is-light .navbar-brand > a.navbar-item.is-active,
-.navbar.is-light .navbar-brand .navbar-link:focus,
-.navbar.is-light .navbar-brand .navbar-link:hover,
-.navbar.is-light .navbar-brand .navbar-link.is-active {
+.navbar.light .navbar-brand > a.navbar-item:focus, .navbar.light .navbar-brand > a.navbar-item:hover, .navbar.light .navbar-brand > a.navbar-item.active,
+.navbar.light .navbar-brand .navbar-link:focus,
+.navbar.light .navbar-brand .navbar-link:hover,
+.navbar.light .navbar-brand .navbar-link.active {
   background-color: #e8e8e8;
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar.is-light .navbar-brand .navbar-link::after {
+.navbar.light .navbar-brand .navbar-link::after {
   border-color: rgba(0, 0, 0, 0.7);
 }
-.navbar.is-light .navbar-burger {
+.navbar.light .navbar-burger {
   color: rgba(0, 0, 0, 0.7);
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-light .navbar-start > .navbar-item,
-.navbar.is-light .navbar-start .navbar-link,
-.navbar.is-light .navbar-end > .navbar-item,
-.navbar.is-light .navbar-end .navbar-link {
+  .navbar.light .navbar-start > .navbar-item,
+.navbar.light .navbar-start .navbar-link,
+.navbar.light .navbar-end > .navbar-item,
+.navbar.light .navbar-end .navbar-link {
     color: rgba(0, 0, 0, 0.7);
   }
-  .navbar.is-light .navbar-start > a.navbar-item:focus, .navbar.is-light .navbar-start > a.navbar-item:hover, .navbar.is-light .navbar-start > a.navbar-item.is-active,
-.navbar.is-light .navbar-start .navbar-link:focus,
-.navbar.is-light .navbar-start .navbar-link:hover,
-.navbar.is-light .navbar-start .navbar-link.is-active,
-.navbar.is-light .navbar-end > a.navbar-item:focus,
-.navbar.is-light .navbar-end > a.navbar-item:hover,
-.navbar.is-light .navbar-end > a.navbar-item.is-active,
-.navbar.is-light .navbar-end .navbar-link:focus,
-.navbar.is-light .navbar-end .navbar-link:hover,
-.navbar.is-light .navbar-end .navbar-link.is-active {
+  .navbar.light .navbar-start > a.navbar-item:focus, .navbar.light .navbar-start > a.navbar-item:hover, .navbar.light .navbar-start > a.navbar-item.active,
+.navbar.light .navbar-start .navbar-link:focus,
+.navbar.light .navbar-start .navbar-link:hover,
+.navbar.light .navbar-start .navbar-link.active,
+.navbar.light .navbar-end > a.navbar-item:focus,
+.navbar.light .navbar-end > a.navbar-item:hover,
+.navbar.light .navbar-end > a.navbar-item.active,
+.navbar.light .navbar-end .navbar-link:focus,
+.navbar.light .navbar-end .navbar-link:hover,
+.navbar.light .navbar-end .navbar-link.active {
     background-color: #e8e8e8;
     color: rgba(0, 0, 0, 0.7);
   }
-  .navbar.is-light .navbar-start .navbar-link::after,
-.navbar.is-light .navbar-end .navbar-link::after {
+  .navbar.light .navbar-start .navbar-link::after,
+.navbar.light .navbar-end .navbar-link::after {
     border-color: rgba(0, 0, 0, 0.7);
   }
-  .navbar.is-light .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-light .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-light .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.light .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.light .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.light .navbar-item.has-dropdown.active .navbar-link {
     background-color: #e8e8e8;
     color: rgba(0, 0, 0, 0.7);
   }
-  .navbar.is-light .navbar-dropdown a.navbar-item.is-active {
+  .navbar.light .navbar-dropdown a.navbar-item.active {
     background-color: whitesmoke;
     color: rgba(0, 0, 0, 0.7);
   }
 }
-.navbar.is-dark {
+.navbar.dark {
   background-color: #363636;
   color: #fff;
 }
-.navbar.is-dark .navbar-brand > .navbar-item,
-.navbar.is-dark .navbar-brand .navbar-link {
+.navbar.dark .navbar-brand > .navbar-item,
+.navbar.dark .navbar-brand .navbar-link {
   color: #fff;
 }
-.navbar.is-dark .navbar-brand > a.navbar-item:focus, .navbar.is-dark .navbar-brand > a.navbar-item:hover, .navbar.is-dark .navbar-brand > a.navbar-item.is-active,
-.navbar.is-dark .navbar-brand .navbar-link:focus,
-.navbar.is-dark .navbar-brand .navbar-link:hover,
-.navbar.is-dark .navbar-brand .navbar-link.is-active {
+.navbar.dark .navbar-brand > a.navbar-item:focus, .navbar.dark .navbar-brand > a.navbar-item:hover, .navbar.dark .navbar-brand > a.navbar-item.active,
+.navbar.dark .navbar-brand .navbar-link:focus,
+.navbar.dark .navbar-brand .navbar-link:hover,
+.navbar.dark .navbar-brand .navbar-link.active {
   background-color: #292929;
   color: #fff;
 }
-.navbar.is-dark .navbar-brand .navbar-link::after {
+.navbar.dark .navbar-brand .navbar-link::after {
   border-color: #fff;
 }
-.navbar.is-dark .navbar-burger {
+.navbar.dark .navbar-burger {
   color: #fff;
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-dark .navbar-start > .navbar-item,
-.navbar.is-dark .navbar-start .navbar-link,
-.navbar.is-dark .navbar-end > .navbar-item,
-.navbar.is-dark .navbar-end .navbar-link {
+  .navbar.dark .navbar-start > .navbar-item,
+.navbar.dark .navbar-start .navbar-link,
+.navbar.dark .navbar-end > .navbar-item,
+.navbar.dark .navbar-end .navbar-link {
     color: #fff;
   }
-  .navbar.is-dark .navbar-start > a.navbar-item:focus, .navbar.is-dark .navbar-start > a.navbar-item:hover, .navbar.is-dark .navbar-start > a.navbar-item.is-active,
-.navbar.is-dark .navbar-start .navbar-link:focus,
-.navbar.is-dark .navbar-start .navbar-link:hover,
-.navbar.is-dark .navbar-start .navbar-link.is-active,
-.navbar.is-dark .navbar-end > a.navbar-item:focus,
-.navbar.is-dark .navbar-end > a.navbar-item:hover,
-.navbar.is-dark .navbar-end > a.navbar-item.is-active,
-.navbar.is-dark .navbar-end .navbar-link:focus,
-.navbar.is-dark .navbar-end .navbar-link:hover,
-.navbar.is-dark .navbar-end .navbar-link.is-active {
+  .navbar.dark .navbar-start > a.navbar-item:focus, .navbar.dark .navbar-start > a.navbar-item:hover, .navbar.dark .navbar-start > a.navbar-item.active,
+.navbar.dark .navbar-start .navbar-link:focus,
+.navbar.dark .navbar-start .navbar-link:hover,
+.navbar.dark .navbar-start .navbar-link.active,
+.navbar.dark .navbar-end > a.navbar-item:focus,
+.navbar.dark .navbar-end > a.navbar-item:hover,
+.navbar.dark .navbar-end > a.navbar-item.active,
+.navbar.dark .navbar-end .navbar-link:focus,
+.navbar.dark .navbar-end .navbar-link:hover,
+.navbar.dark .navbar-end .navbar-link.active {
     background-color: #292929;
     color: #fff;
   }
-  .navbar.is-dark .navbar-start .navbar-link::after,
-.navbar.is-dark .navbar-end .navbar-link::after {
+  .navbar.dark .navbar-start .navbar-link::after,
+.navbar.dark .navbar-end .navbar-link::after {
     border-color: #fff;
   }
-  .navbar.is-dark .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-dark .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.dark .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.dark .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.dark .navbar-item.has-dropdown.active .navbar-link {
     background-color: #292929;
     color: #fff;
   }
-  .navbar.is-dark .navbar-dropdown a.navbar-item.is-active {
+  .navbar.dark .navbar-dropdown a.navbar-item.active {
     background-color: #363636;
     color: #fff;
   }
 }
-.navbar.is-primary {
+.navbar.primary {
   background-color: #00d1b2;
   color: #fff;
 }
-.navbar.is-primary .navbar-brand > .navbar-item,
-.navbar.is-primary .navbar-brand .navbar-link {
+.navbar.primary .navbar-brand > .navbar-item,
+.navbar.primary .navbar-brand .navbar-link {
   color: #fff;
 }
-.navbar.is-primary .navbar-brand > a.navbar-item:focus, .navbar.is-primary .navbar-brand > a.navbar-item:hover, .navbar.is-primary .navbar-brand > a.navbar-item.is-active,
-.navbar.is-primary .navbar-brand .navbar-link:focus,
-.navbar.is-primary .navbar-brand .navbar-link:hover,
-.navbar.is-primary .navbar-brand .navbar-link.is-active {
+.navbar.primary .navbar-brand > a.navbar-item:focus, .navbar.primary .navbar-brand > a.navbar-item:hover, .navbar.primary .navbar-brand > a.navbar-item.active,
+.navbar.primary .navbar-brand .navbar-link:focus,
+.navbar.primary .navbar-brand .navbar-link:hover,
+.navbar.primary .navbar-brand .navbar-link.active {
   background-color: #00b89c;
   color: #fff;
 }
-.navbar.is-primary .navbar-brand .navbar-link::after {
+.navbar.primary .navbar-brand .navbar-link::after {
   border-color: #fff;
 }
-.navbar.is-primary .navbar-burger {
+.navbar.primary .navbar-burger {
   color: #fff;
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-primary .navbar-start > .navbar-item,
-.navbar.is-primary .navbar-start .navbar-link,
-.navbar.is-primary .navbar-end > .navbar-item,
-.navbar.is-primary .navbar-end .navbar-link {
+  .navbar.primary .navbar-start > .navbar-item,
+.navbar.primary .navbar-start .navbar-link,
+.navbar.primary .navbar-end > .navbar-item,
+.navbar.primary .navbar-end .navbar-link {
     color: #fff;
   }
-  .navbar.is-primary .navbar-start > a.navbar-item:focus, .navbar.is-primary .navbar-start > a.navbar-item:hover, .navbar.is-primary .navbar-start > a.navbar-item.is-active,
-.navbar.is-primary .navbar-start .navbar-link:focus,
-.navbar.is-primary .navbar-start .navbar-link:hover,
-.navbar.is-primary .navbar-start .navbar-link.is-active,
-.navbar.is-primary .navbar-end > a.navbar-item:focus,
-.navbar.is-primary .navbar-end > a.navbar-item:hover,
-.navbar.is-primary .navbar-end > a.navbar-item.is-active,
-.navbar.is-primary .navbar-end .navbar-link:focus,
-.navbar.is-primary .navbar-end .navbar-link:hover,
-.navbar.is-primary .navbar-end .navbar-link.is-active {
+  .navbar.primary .navbar-start > a.navbar-item:focus, .navbar.primary .navbar-start > a.navbar-item:hover, .navbar.primary .navbar-start > a.navbar-item.active,
+.navbar.primary .navbar-start .navbar-link:focus,
+.navbar.primary .navbar-start .navbar-link:hover,
+.navbar.primary .navbar-start .navbar-link.active,
+.navbar.primary .navbar-end > a.navbar-item:focus,
+.navbar.primary .navbar-end > a.navbar-item:hover,
+.navbar.primary .navbar-end > a.navbar-item.active,
+.navbar.primary .navbar-end .navbar-link:focus,
+.navbar.primary .navbar-end .navbar-link:hover,
+.navbar.primary .navbar-end .navbar-link.active {
     background-color: #00b89c;
     color: #fff;
   }
-  .navbar.is-primary .navbar-start .navbar-link::after,
-.navbar.is-primary .navbar-end .navbar-link::after {
+  .navbar.primary .navbar-start .navbar-link::after,
+.navbar.primary .navbar-end .navbar-link::after {
     border-color: #fff;
   }
-  .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.primary .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.primary .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.primary .navbar-item.has-dropdown.active .navbar-link {
     background-color: #00b89c;
     color: #fff;
   }
-  .navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
+  .navbar.primary .navbar-dropdown a.navbar-item.active {
     background-color: #00d1b2;
     color: #fff;
   }
 }
-.navbar.is-link {
+.navbar.link {
   background-color: #485fc7;
   color: #fff;
 }
-.navbar.is-link .navbar-brand > .navbar-item,
-.navbar.is-link .navbar-brand .navbar-link {
+.navbar.link .navbar-brand > .navbar-item,
+.navbar.link .navbar-brand .navbar-link {
   color: #fff;
 }
-.navbar.is-link .navbar-brand > a.navbar-item:focus, .navbar.is-link .navbar-brand > a.navbar-item:hover, .navbar.is-link .navbar-brand > a.navbar-item.is-active,
-.navbar.is-link .navbar-brand .navbar-link:focus,
-.navbar.is-link .navbar-brand .navbar-link:hover,
-.navbar.is-link .navbar-brand .navbar-link.is-active {
+.navbar.link .navbar-brand > a.navbar-item:focus, .navbar.link .navbar-brand > a.navbar-item:hover, .navbar.link .navbar-brand > a.navbar-item.active,
+.navbar.link .navbar-brand .navbar-link:focus,
+.navbar.link .navbar-brand .navbar-link:hover,
+.navbar.link .navbar-brand .navbar-link.active {
   background-color: #3a51bb;
   color: #fff;
 }
-.navbar.is-link .navbar-brand .navbar-link::after {
+.navbar.link .navbar-brand .navbar-link::after {
   border-color: #fff;
 }
-.navbar.is-link .navbar-burger {
+.navbar.link .navbar-burger {
   color: #fff;
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-link .navbar-start > .navbar-item,
-.navbar.is-link .navbar-start .navbar-link,
-.navbar.is-link .navbar-end > .navbar-item,
-.navbar.is-link .navbar-end .navbar-link {
+  .navbar.link .navbar-start > .navbar-item,
+.navbar.link .navbar-start .navbar-link,
+.navbar.link .navbar-end > .navbar-item,
+.navbar.link .navbar-end .navbar-link {
     color: #fff;
   }
-  .navbar.is-link .navbar-start > a.navbar-item:focus, .navbar.is-link .navbar-start > a.navbar-item:hover, .navbar.is-link .navbar-start > a.navbar-item.is-active,
-.navbar.is-link .navbar-start .navbar-link:focus,
-.navbar.is-link .navbar-start .navbar-link:hover,
-.navbar.is-link .navbar-start .navbar-link.is-active,
-.navbar.is-link .navbar-end > a.navbar-item:focus,
-.navbar.is-link .navbar-end > a.navbar-item:hover,
-.navbar.is-link .navbar-end > a.navbar-item.is-active,
-.navbar.is-link .navbar-end .navbar-link:focus,
-.navbar.is-link .navbar-end .navbar-link:hover,
-.navbar.is-link .navbar-end .navbar-link.is-active {
+  .navbar.link .navbar-start > a.navbar-item:focus, .navbar.link .navbar-start > a.navbar-item:hover, .navbar.link .navbar-start > a.navbar-item.active,
+.navbar.link .navbar-start .navbar-link:focus,
+.navbar.link .navbar-start .navbar-link:hover,
+.navbar.link .navbar-start .navbar-link.active,
+.navbar.link .navbar-end > a.navbar-item:focus,
+.navbar.link .navbar-end > a.navbar-item:hover,
+.navbar.link .navbar-end > a.navbar-item.active,
+.navbar.link .navbar-end .navbar-link:focus,
+.navbar.link .navbar-end .navbar-link:hover,
+.navbar.link .navbar-end .navbar-link.active {
     background-color: #3a51bb;
     color: #fff;
   }
-  .navbar.is-link .navbar-start .navbar-link::after,
-.navbar.is-link .navbar-end .navbar-link::after {
+  .navbar.link .navbar-start .navbar-link::after,
+.navbar.link .navbar-end .navbar-link::after {
     border-color: #fff;
   }
-  .navbar.is-link .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-link .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-link .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.link .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.link .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.link .navbar-item.has-dropdown.active .navbar-link {
     background-color: #3a51bb;
     color: #fff;
   }
-  .navbar.is-link .navbar-dropdown a.navbar-item.is-active {
+  .navbar.link .navbar-dropdown a.navbar-item.active {
     background-color: #485fc7;
     color: #fff;
   }
 }
-.navbar.is-info {
+.navbar.info {
   background-color: #3e8ed0;
   color: #fff;
 }
-.navbar.is-info .navbar-brand > .navbar-item,
-.navbar.is-info .navbar-brand .navbar-link {
+.navbar.info .navbar-brand > .navbar-item,
+.navbar.info .navbar-brand .navbar-link {
   color: #fff;
 }
-.navbar.is-info .navbar-brand > a.navbar-item:focus, .navbar.is-info .navbar-brand > a.navbar-item:hover, .navbar.is-info .navbar-brand > a.navbar-item.is-active,
-.navbar.is-info .navbar-brand .navbar-link:focus,
-.navbar.is-info .navbar-brand .navbar-link:hover,
-.navbar.is-info .navbar-brand .navbar-link.is-active {
+.navbar.info .navbar-brand > a.navbar-item:focus, .navbar.info .navbar-brand > a.navbar-item:hover, .navbar.info .navbar-brand > a.navbar-item.active,
+.navbar.info .navbar-brand .navbar-link:focus,
+.navbar.info .navbar-brand .navbar-link:hover,
+.navbar.info .navbar-brand .navbar-link.active {
   background-color: #3082c5;
   color: #fff;
 }
-.navbar.is-info .navbar-brand .navbar-link::after {
+.navbar.info .navbar-brand .navbar-link::after {
   border-color: #fff;
 }
-.navbar.is-info .navbar-burger {
+.navbar.info .navbar-burger {
   color: #fff;
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-info .navbar-start > .navbar-item,
-.navbar.is-info .navbar-start .navbar-link,
-.navbar.is-info .navbar-end > .navbar-item,
-.navbar.is-info .navbar-end .navbar-link {
+  .navbar.info .navbar-start > .navbar-item,
+.navbar.info .navbar-start .navbar-link,
+.navbar.info .navbar-end > .navbar-item,
+.navbar.info .navbar-end .navbar-link {
     color: #fff;
   }
-  .navbar.is-info .navbar-start > a.navbar-item:focus, .navbar.is-info .navbar-start > a.navbar-item:hover, .navbar.is-info .navbar-start > a.navbar-item.is-active,
-.navbar.is-info .navbar-start .navbar-link:focus,
-.navbar.is-info .navbar-start .navbar-link:hover,
-.navbar.is-info .navbar-start .navbar-link.is-active,
-.navbar.is-info .navbar-end > a.navbar-item:focus,
-.navbar.is-info .navbar-end > a.navbar-item:hover,
-.navbar.is-info .navbar-end > a.navbar-item.is-active,
-.navbar.is-info .navbar-end .navbar-link:focus,
-.navbar.is-info .navbar-end .navbar-link:hover,
-.navbar.is-info .navbar-end .navbar-link.is-active {
+  .navbar.info .navbar-start > a.navbar-item:focus, .navbar.info .navbar-start > a.navbar-item:hover, .navbar.info .navbar-start > a.navbar-item.active,
+.navbar.info .navbar-start .navbar-link:focus,
+.navbar.info .navbar-start .navbar-link:hover,
+.navbar.info .navbar-start .navbar-link.active,
+.navbar.info .navbar-end > a.navbar-item:focus,
+.navbar.info .navbar-end > a.navbar-item:hover,
+.navbar.info .navbar-end > a.navbar-item.active,
+.navbar.info .navbar-end .navbar-link:focus,
+.navbar.info .navbar-end .navbar-link:hover,
+.navbar.info .navbar-end .navbar-link.active {
     background-color: #3082c5;
     color: #fff;
   }
-  .navbar.is-info .navbar-start .navbar-link::after,
-.navbar.is-info .navbar-end .navbar-link::after {
+  .navbar.info .navbar-start .navbar-link::after,
+.navbar.info .navbar-end .navbar-link::after {
     border-color: #fff;
   }
-  .navbar.is-info .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-info .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-info .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.info .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.info .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.info .navbar-item.has-dropdown.active .navbar-link {
     background-color: #3082c5;
     color: #fff;
   }
-  .navbar.is-info .navbar-dropdown a.navbar-item.is-active {
+  .navbar.info .navbar-dropdown a.navbar-item.active {
     background-color: #3e8ed0;
     color: #fff;
   }
 }
-.navbar.is-success {
+.navbar.success {
   background-color: #48c78e;
   color: #fff;
 }
-.navbar.is-success .navbar-brand > .navbar-item,
-.navbar.is-success .navbar-brand .navbar-link {
+.navbar.success .navbar-brand > .navbar-item,
+.navbar.success .navbar-brand .navbar-link {
   color: #fff;
 }
-.navbar.is-success .navbar-brand > a.navbar-item:focus, .navbar.is-success .navbar-brand > a.navbar-item:hover, .navbar.is-success .navbar-brand > a.navbar-item.is-active,
-.navbar.is-success .navbar-brand .navbar-link:focus,
-.navbar.is-success .navbar-brand .navbar-link:hover,
-.navbar.is-success .navbar-brand .navbar-link.is-active {
+.navbar.success .navbar-brand > a.navbar-item:focus, .navbar.success .navbar-brand > a.navbar-item:hover, .navbar.success .navbar-brand > a.navbar-item.active,
+.navbar.success .navbar-brand .navbar-link:focus,
+.navbar.success .navbar-brand .navbar-link:hover,
+.navbar.success .navbar-brand .navbar-link.active {
   background-color: #3abb81;
   color: #fff;
 }
-.navbar.is-success .navbar-brand .navbar-link::after {
+.navbar.success .navbar-brand .navbar-link::after {
   border-color: #fff;
 }
-.navbar.is-success .navbar-burger {
+.navbar.success .navbar-burger {
   color: #fff;
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-success .navbar-start > .navbar-item,
-.navbar.is-success .navbar-start .navbar-link,
-.navbar.is-success .navbar-end > .navbar-item,
-.navbar.is-success .navbar-end .navbar-link {
+  .navbar.success .navbar-start > .navbar-item,
+.navbar.success .navbar-start .navbar-link,
+.navbar.success .navbar-end > .navbar-item,
+.navbar.success .navbar-end .navbar-link {
     color: #fff;
   }
-  .navbar.is-success .navbar-start > a.navbar-item:focus, .navbar.is-success .navbar-start > a.navbar-item:hover, .navbar.is-success .navbar-start > a.navbar-item.is-active,
-.navbar.is-success .navbar-start .navbar-link:focus,
-.navbar.is-success .navbar-start .navbar-link:hover,
-.navbar.is-success .navbar-start .navbar-link.is-active,
-.navbar.is-success .navbar-end > a.navbar-item:focus,
-.navbar.is-success .navbar-end > a.navbar-item:hover,
-.navbar.is-success .navbar-end > a.navbar-item.is-active,
-.navbar.is-success .navbar-end .navbar-link:focus,
-.navbar.is-success .navbar-end .navbar-link:hover,
-.navbar.is-success .navbar-end .navbar-link.is-active {
+  .navbar.success .navbar-start > a.navbar-item:focus, .navbar.success .navbar-start > a.navbar-item:hover, .navbar.success .navbar-start > a.navbar-item.active,
+.navbar.success .navbar-start .navbar-link:focus,
+.navbar.success .navbar-start .navbar-link:hover,
+.navbar.success .navbar-start .navbar-link.active,
+.navbar.success .navbar-end > a.navbar-item:focus,
+.navbar.success .navbar-end > a.navbar-item:hover,
+.navbar.success .navbar-end > a.navbar-item.active,
+.navbar.success .navbar-end .navbar-link:focus,
+.navbar.success .navbar-end .navbar-link:hover,
+.navbar.success .navbar-end .navbar-link.active {
     background-color: #3abb81;
     color: #fff;
   }
-  .navbar.is-success .navbar-start .navbar-link::after,
-.navbar.is-success .navbar-end .navbar-link::after {
+  .navbar.success .navbar-start .navbar-link::after,
+.navbar.success .navbar-end .navbar-link::after {
     border-color: #fff;
   }
-  .navbar.is-success .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-success .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-success .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.success .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.success .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.success .navbar-item.has-dropdown.active .navbar-link {
     background-color: #3abb81;
     color: #fff;
   }
-  .navbar.is-success .navbar-dropdown a.navbar-item.is-active {
+  .navbar.success .navbar-dropdown a.navbar-item.active {
     background-color: #48c78e;
     color: #fff;
   }
 }
-.navbar.is-warning {
+.navbar.warning {
   background-color: #ffe08a;
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar.is-warning .navbar-brand > .navbar-item,
-.navbar.is-warning .navbar-brand .navbar-link {
+.navbar.warning .navbar-brand > .navbar-item,
+.navbar.warning .navbar-brand .navbar-link {
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar.is-warning .navbar-brand > a.navbar-item:focus, .navbar.is-warning .navbar-brand > a.navbar-item:hover, .navbar.is-warning .navbar-brand > a.navbar-item.is-active,
-.navbar.is-warning .navbar-brand .navbar-link:focus,
-.navbar.is-warning .navbar-brand .navbar-link:hover,
-.navbar.is-warning .navbar-brand .navbar-link.is-active {
+.navbar.warning .navbar-brand > a.navbar-item:focus, .navbar.warning .navbar-brand > a.navbar-item:hover, .navbar.warning .navbar-brand > a.navbar-item.active,
+.navbar.warning .navbar-brand .navbar-link:focus,
+.navbar.warning .navbar-brand .navbar-link:hover,
+.navbar.warning .navbar-brand .navbar-link.active {
   background-color: #ffd970;
   color: rgba(0, 0, 0, 0.7);
 }
-.navbar.is-warning .navbar-brand .navbar-link::after {
+.navbar.warning .navbar-brand .navbar-link::after {
   border-color: rgba(0, 0, 0, 0.7);
 }
-.navbar.is-warning .navbar-burger {
+.navbar.warning .navbar-burger {
   color: rgba(0, 0, 0, 0.7);
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-warning .navbar-start > .navbar-item,
-.navbar.is-warning .navbar-start .navbar-link,
-.navbar.is-warning .navbar-end > .navbar-item,
-.navbar.is-warning .navbar-end .navbar-link {
+  .navbar.warning .navbar-start > .navbar-item,
+.navbar.warning .navbar-start .navbar-link,
+.navbar.warning .navbar-end > .navbar-item,
+.navbar.warning .navbar-end .navbar-link {
     color: rgba(0, 0, 0, 0.7);
   }
-  .navbar.is-warning .navbar-start > a.navbar-item:focus, .navbar.is-warning .navbar-start > a.navbar-item:hover, .navbar.is-warning .navbar-start > a.navbar-item.is-active,
-.navbar.is-warning .navbar-start .navbar-link:focus,
-.navbar.is-warning .navbar-start .navbar-link:hover,
-.navbar.is-warning .navbar-start .navbar-link.is-active,
-.navbar.is-warning .navbar-end > a.navbar-item:focus,
-.navbar.is-warning .navbar-end > a.navbar-item:hover,
-.navbar.is-warning .navbar-end > a.navbar-item.is-active,
-.navbar.is-warning .navbar-end .navbar-link:focus,
-.navbar.is-warning .navbar-end .navbar-link:hover,
-.navbar.is-warning .navbar-end .navbar-link.is-active {
+  .navbar.warning .navbar-start > a.navbar-item:focus, .navbar.warning .navbar-start > a.navbar-item:hover, .navbar.warning .navbar-start > a.navbar-item.active,
+.navbar.warning .navbar-start .navbar-link:focus,
+.navbar.warning .navbar-start .navbar-link:hover,
+.navbar.warning .navbar-start .navbar-link.active,
+.navbar.warning .navbar-end > a.navbar-item:focus,
+.navbar.warning .navbar-end > a.navbar-item:hover,
+.navbar.warning .navbar-end > a.navbar-item.active,
+.navbar.warning .navbar-end .navbar-link:focus,
+.navbar.warning .navbar-end .navbar-link:hover,
+.navbar.warning .navbar-end .navbar-link.active {
     background-color: #ffd970;
     color: rgba(0, 0, 0, 0.7);
   }
-  .navbar.is-warning .navbar-start .navbar-link::after,
-.navbar.is-warning .navbar-end .navbar-link::after {
+  .navbar.warning .navbar-start .navbar-link::after,
+.navbar.warning .navbar-end .navbar-link::after {
     border-color: rgba(0, 0, 0, 0.7);
   }
-  .navbar.is-warning .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-warning .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-warning .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.warning .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.warning .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.warning .navbar-item.has-dropdown.active .navbar-link {
     background-color: #ffd970;
     color: rgba(0, 0, 0, 0.7);
   }
-  .navbar.is-warning .navbar-dropdown a.navbar-item.is-active {
+  .navbar.warning .navbar-dropdown a.navbar-item.active {
     background-color: #ffe08a;
     color: rgba(0, 0, 0, 0.7);
   }
 }
-.navbar.is-danger {
+.navbar.danger {
   background-color: #f14668;
   color: #fff;
 }
-.navbar.is-danger .navbar-brand > .navbar-item,
-.navbar.is-danger .navbar-brand .navbar-link {
+.navbar.danger .navbar-brand > .navbar-item,
+.navbar.danger .navbar-brand .navbar-link {
   color: #fff;
 }
-.navbar.is-danger .navbar-brand > a.navbar-item:focus, .navbar.is-danger .navbar-brand > a.navbar-item:hover, .navbar.is-danger .navbar-brand > a.navbar-item.is-active,
-.navbar.is-danger .navbar-brand .navbar-link:focus,
-.navbar.is-danger .navbar-brand .navbar-link:hover,
-.navbar.is-danger .navbar-brand .navbar-link.is-active {
+.navbar.danger .navbar-brand > a.navbar-item:focus, .navbar.danger .navbar-brand > a.navbar-item:hover, .navbar.danger .navbar-brand > a.navbar-item.active,
+.navbar.danger .navbar-brand .navbar-link:focus,
+.navbar.danger .navbar-brand .navbar-link:hover,
+.navbar.danger .navbar-brand .navbar-link.active {
   background-color: #ef2e55;
   color: #fff;
 }
-.navbar.is-danger .navbar-brand .navbar-link::after {
+.navbar.danger .navbar-brand .navbar-link::after {
   border-color: #fff;
 }
-.navbar.is-danger .navbar-burger {
+.navbar.danger .navbar-burger {
   color: #fff;
 }
 @media screen and (min-width: 1024px) {
-  .navbar.is-danger .navbar-start > .navbar-item,
-.navbar.is-danger .navbar-start .navbar-link,
-.navbar.is-danger .navbar-end > .navbar-item,
-.navbar.is-danger .navbar-end .navbar-link {
+  .navbar.danger .navbar-start > .navbar-item,
+.navbar.danger .navbar-start .navbar-link,
+.navbar.danger .navbar-end > .navbar-item,
+.navbar.danger .navbar-end .navbar-link {
     color: #fff;
   }
-  .navbar.is-danger .navbar-start > a.navbar-item:focus, .navbar.is-danger .navbar-start > a.navbar-item:hover, .navbar.is-danger .navbar-start > a.navbar-item.is-active,
-.navbar.is-danger .navbar-start .navbar-link:focus,
-.navbar.is-danger .navbar-start .navbar-link:hover,
-.navbar.is-danger .navbar-start .navbar-link.is-active,
-.navbar.is-danger .navbar-end > a.navbar-item:focus,
-.navbar.is-danger .navbar-end > a.navbar-item:hover,
-.navbar.is-danger .navbar-end > a.navbar-item.is-active,
-.navbar.is-danger .navbar-end .navbar-link:focus,
-.navbar.is-danger .navbar-end .navbar-link:hover,
-.navbar.is-danger .navbar-end .navbar-link.is-active {
+  .navbar.danger .navbar-start > a.navbar-item:focus, .navbar.danger .navbar-start > a.navbar-item:hover, .navbar.danger .navbar-start > a.navbar-item.active,
+.navbar.danger .navbar-start .navbar-link:focus,
+.navbar.danger .navbar-start .navbar-link:hover,
+.navbar.danger .navbar-start .navbar-link.active,
+.navbar.danger .navbar-end > a.navbar-item:focus,
+.navbar.danger .navbar-end > a.navbar-item:hover,
+.navbar.danger .navbar-end > a.navbar-item.active,
+.navbar.danger .navbar-end .navbar-link:focus,
+.navbar.danger .navbar-end .navbar-link:hover,
+.navbar.danger .navbar-end .navbar-link.active {
     background-color: #ef2e55;
     color: #fff;
   }
-  .navbar.is-danger .navbar-start .navbar-link::after,
-.navbar.is-danger .navbar-end .navbar-link::after {
+  .navbar.danger .navbar-start .navbar-link::after,
+.navbar.danger .navbar-end .navbar-link::after {
     border-color: #fff;
   }
-  .navbar.is-danger .navbar-item.has-dropdown:focus .navbar-link,
-.navbar.is-danger .navbar-item.has-dropdown:hover .navbar-link,
-.navbar.is-danger .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar.danger .navbar-item.has-dropdown:focus .navbar-link,
+.navbar.danger .navbar-item.has-dropdown:hover .navbar-link,
+.navbar.danger .navbar-item.has-dropdown.active .navbar-link {
     background-color: #ef2e55;
     color: #fff;
   }
-  .navbar.is-danger .navbar-dropdown a.navbar-item.is-active {
+  .navbar.danger .navbar-dropdown a.navbar-item.active {
     background-color: #f14668;
     color: #fff;
   }
@@ -2081,19 +3294,19 @@ table th {
 .navbar.has-shadow {
   box-shadow: 0 2px 0 0 whitesmoke;
 }
-.navbar.is-fixed-bottom, .navbar.is-fixed-top {
+.navbar.fixed-bottom, .navbar.fixed-top {
   left: 0;
   position: fixed;
   right: 0;
   z-index: 30;
 }
-.navbar.is-fixed-bottom {
+.navbar.fixed-bottom {
   bottom: 0;
 }
-.navbar.is-fixed-bottom.has-shadow {
+.navbar.fixed-bottom.has-shadow {
   box-shadow: 0 -2px 0 0 whitesmoke;
 }
-.navbar.is-fixed-top {
+.navbar.fixed-top {
   top: 0;
 }
 
@@ -2195,11 +3408,11 @@ a.navbar-item,
 .navbar-link {
   cursor: pointer;
 }
-a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active,
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.active,
 .navbar-link:focus,
 .navbar-link:focus-within,
 .navbar-link:hover,
-.navbar-link.is-active {
+.navbar-link.active {
   background-color: #fafafa;
   color: #485fc7;
 }
@@ -2214,20 +3427,20 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .navbar-item.has-dropdown {
   padding: 0;
 }
-.navbar-item.is-expanded {
+.navbar-item.expanded {
   flex-grow: 1;
   flex-shrink: 1;
 }
-.navbar-item.is-tab {
+.navbar-item.tab {
   border-bottom: 1px solid transparent;
   min-height: 3.25rem;
   padding-bottom: calc(0.5rem - 1px);
 }
-.navbar-item.is-tab:focus, .navbar-item.is-tab:hover {
+.navbar-item.tab:focus, .navbar-item.tab:hover {
   background-color: transparent;
   border-bottom-color: #485fc7;
 }
-.navbar-item.is-tab.is-active {
+.navbar-item.tab.active {
   background-color: transparent;
   border-bottom-color: #485fc7;
   border-bottom-style: solid;
@@ -2241,10 +3454,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   flex-shrink: 1;
 }
 
-.navbar-link:not(.is-arrowless) {
+.navbar-link:not(.arrowless) {
   padding-right: 2.5em;
 }
-.navbar-link:not(.is-arrowless)::after {
+.navbar-link:not(.arrowless)::after {
   border-color: #485fc7;
   margin-top: -0.375em;
   right: 1.125em;
@@ -2288,26 +3501,26 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
   }
-  .navbar-menu.is-active {
+  .navbar-menu.active {
     display: block;
   }
 
-  .navbar.is-fixed-bottom-touch, .navbar.is-fixed-top-touch {
+  .navbar.fixed-bottom-touch, .navbar.fixed-top-touch {
     left: 0;
     position: fixed;
     right: 0;
     z-index: 30;
   }
-  .navbar.is-fixed-bottom-touch {
+  .navbar.fixed-bottom-touch {
     bottom: 0;
   }
-  .navbar.is-fixed-bottom-touch.has-shadow {
+  .navbar.fixed-bottom-touch.has-shadow {
     box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1);
   }
-  .navbar.is-fixed-top-touch {
+  .navbar.fixed-top-touch {
     top: 0;
   }
-  .navbar.is-fixed-top .navbar-menu, .navbar.is-fixed-top-touch .navbar-menu {
+  .navbar.fixed-top .navbar-menu, .navbar.fixed-top-touch .navbar-menu {
     -webkit-overflow-scrolling: touch;
     max-height: calc(100vh - 3.25rem);
     overflow: auto;
@@ -2334,31 +3547,31 @@ body.has-navbar-fixed-bottom-touch {
   .navbar {
     min-height: 3.25rem;
   }
-  .navbar.is-spaced {
+  .navbar.spaced {
     padding: 1rem 2rem;
   }
-  .navbar.is-spaced .navbar-start,
-.navbar.is-spaced .navbar-end {
+  .navbar.spaced .navbar-start,
+.navbar.spaced .navbar-end {
     align-items: center;
   }
-  .navbar.is-spaced a.navbar-item,
-.navbar.is-spaced .navbar-link {
+  .navbar.spaced a.navbar-item,
+.navbar.spaced .navbar-link {
     border-radius: 4px;
   }
-  .navbar.is-transparent a.navbar-item:focus, .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item.is-active,
-.navbar.is-transparent .navbar-link:focus,
-.navbar.is-transparent .navbar-link:hover,
-.navbar.is-transparent .navbar-link.is-active {
+  .navbar.transparent a.navbar-item:focus, .navbar.transparent a.navbar-item:hover, .navbar.transparent a.navbar-item.active,
+.navbar.transparent .navbar-link:focus,
+.navbar.transparent .navbar-link:hover,
+.navbar.transparent .navbar-link.active {
     background-color: transparent !important;
   }
-  .navbar.is-transparent .navbar-item.has-dropdown.is-active .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:focus .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:focus-within .navbar-link, .navbar.is-transparent .navbar-item.has-dropdown.is-hoverable:hover .navbar-link {
+  .navbar.transparent .navbar-item.has-dropdown.active .navbar-link, .navbar.transparent .navbar-item.has-dropdown.hoverable:focus .navbar-link, .navbar.transparent .navbar-item.has-dropdown.hoverable:focus-within .navbar-link, .navbar.transparent .navbar-item.has-dropdown.hoverable:hover .navbar-link {
     background-color: transparent !important;
   }
-  .navbar.is-transparent .navbar-dropdown a.navbar-item:focus, .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
+  .navbar.transparent .navbar-dropdown a.navbar-item:focus, .navbar.transparent .navbar-dropdown a.navbar-item:hover {
     background-color: whitesmoke;
     color: #0a0a0a;
   }
-  .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
+  .navbar.transparent .navbar-dropdown a.navbar-item.active {
     background-color: whitesmoke;
     color: #485fc7;
   }
@@ -2387,10 +3600,10 @@ body.has-navbar-fixed-bottom-touch {
     box-shadow: 0 -8px 8px rgba(10, 10, 10, 0.1);
     top: auto;
   }
-  .navbar-item.is-active .navbar-dropdown, .navbar-item.is-hoverable:focus .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown {
+  .navbar-item.active .navbar-dropdown, .navbar-item.hoverable:focus .navbar-dropdown, .navbar-item.hoverable:focus-within .navbar-dropdown, .navbar-item.hoverable:hover .navbar-dropdown {
     display: block;
   }
-  .navbar.is-spaced .navbar-item.is-active .navbar-dropdown, .navbar-item.is-active .navbar-dropdown.is-boxed, .navbar.is-spaced .navbar-item.is-hoverable:focus .navbar-dropdown, .navbar-item.is-hoverable:focus .navbar-dropdown.is-boxed, .navbar.is-spaced .navbar-item.is-hoverable:focus-within .navbar-dropdown, .navbar-item.is-hoverable:focus-within .navbar-dropdown.is-boxed, .navbar.is-spaced .navbar-item.is-hoverable:hover .navbar-dropdown, .navbar-item.is-hoverable:hover .navbar-dropdown.is-boxed {
+  .navbar.spaced .navbar-item.active .navbar-dropdown, .navbar-item.active .navbar-dropdown.boxed, .navbar.spaced .navbar-item.hoverable:focus .navbar-dropdown, .navbar-item.hoverable:focus .navbar-dropdown.boxed, .navbar.spaced .navbar-item.hoverable:focus-within .navbar-dropdown, .navbar-item.hoverable:focus-within .navbar-dropdown.boxed, .navbar.spaced .navbar-item.hoverable:hover .navbar-dropdown, .navbar-item.hoverable:hover .navbar-dropdown.boxed {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
@@ -2436,11 +3649,11 @@ body.has-navbar-fixed-bottom-touch {
     background-color: whitesmoke;
     color: #0a0a0a;
   }
-  .navbar-dropdown a.navbar-item.is-active {
+  .navbar-dropdown a.navbar-item.active {
     background-color: whitesmoke;
     color: #485fc7;
   }
-  .navbar.is-spaced .navbar-dropdown, .navbar-dropdown.is-boxed {
+  .navbar.spaced .navbar-dropdown, .navbar-dropdown.boxed {
     border-radius: 6px;
     border-top: none;
     box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
@@ -2452,7 +3665,7 @@ body.has-navbar-fixed-bottom-touch {
     transition-duration: 86ms;
     transition-property: opacity, transform;
   }
-  .navbar-dropdown.is-right {
+  .navbar-dropdown.right {
     left: auto;
     right: 0;
   }
@@ -2470,19 +3683,19 @@ body.has-navbar-fixed-bottom-touch {
     margin-right: -0.75rem;
   }
 
-  .navbar.is-fixed-bottom-desktop, .navbar.is-fixed-top-desktop {
+  .navbar.fixed-bottom-desktop, .navbar.fixed-top-desktop {
     left: 0;
     position: fixed;
     right: 0;
     z-index: 30;
   }
-  .navbar.is-fixed-bottom-desktop {
+  .navbar.fixed-bottom-desktop {
     bottom: 0;
   }
-  .navbar.is-fixed-bottom-desktop.has-shadow {
+  .navbar.fixed-bottom-desktop.has-shadow {
     box-shadow: 0 -2px 3px rgba(10, 10, 10, 0.1);
   }
-  .navbar.is-fixed-top-desktop {
+  .navbar.fixed-top-desktop {
     top: 0;
   }
 
@@ -2503,20 +3716,20 @@ body.has-spaced-navbar-fixed-bottom {
     padding-bottom: 5.25rem;
   }
 
-  a.navbar-item.is-active,
-.navbar-link.is-active {
+  a.navbar-item.active,
+.navbar-link.active {
     color: #0a0a0a;
   }
-  a.navbar-item.is-active:not(:focus):not(:hover),
-.navbar-link.is-active:not(:focus):not(:hover) {
+  a.navbar-item.active:not(:focus):not(:hover),
+.navbar-link.active:not(:focus):not(:hover) {
     background-color: transparent;
   }
 
-  .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
+  .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.active .navbar-link {
     background-color: #fafafa;
   }
 }
-.hero.is-fullheight-with-navbar {
+.hero.fullheight-with-navbar {
   min-height: calc(100vh - 3.25rem);
 }
 

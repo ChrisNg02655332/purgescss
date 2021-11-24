@@ -1,0 +1,132 @@
+@use "sass:string";
+
+@function getName($string, $indexString, $prefix-name: null) {
+  @if str-index($string, $indexString) {
+    $postfix-name: "";
+
+    @if str-index($string, "-") {
+      $start: str-index($string, "-") + 1;
+      $end: str-length($string);
+      $postfix-name: str-slice($string, $start, $end);
+    }
+
+    @if $postfix-name == "" {
+      @return $prefix-name;
+    }
+
+    @if ($prefix-name) {
+      @return $prefix-name + "-" + $postfix-name;
+    }
+
+    @return $postfix-name;
+  }
+
+  @return $string;
+}
+
+$flex-direction-values: row, row-reverse, column, column-reverse;
+@for $i from 1 through length($flex-direction-values) {
+  $value: nth($flex-direction-values, $i);
+  $name: getName(
+    string.quote(nth($flex-direction-values, $i)),
+    "column",
+    "col"
+  );
+
+  .flex-#{$name} {
+    flex-direction: $value !important;
+  }
+}
+
+$flex-wrap-values: nowrap, wrap, wrap-reverse;
+@each $value in $flex-wrap-values {
+  .flex-#{$value} {
+    flex-wrap: $value !important;
+  }
+}
+
+$justify-content-values: center, flex-start, flex-end, space-between,
+  space-around, space-evenly;
+@for $i from 1 through length($justify-content-values) {
+  $value: nth($justify-content-values, $i);
+  $name: nth($justify-content-values, $i);
+
+  @if $i >= 2 {
+    $name: getName(string.quote(nth($justify-content-values, $i)), "flex");
+  }
+
+  @if $i >= 4 {
+    $name: getName(string.quote(nth($justify-content-values, $i)), "space");
+  }
+
+  .justify-#{$name} {
+    justify-content: $value !important;
+  }
+}
+
+$justify-self-value: auto, start, end, center, stretch;
+@each $value in $justify-self-value {
+  .justify-self-#{$value} {
+    justify-self: $value !important;
+  }
+}
+
+$align-content-values: center, flex-start, flex-end, space-between, space-around,
+  space-evenly;
+@for $i from 1 through length($align-content-values) {
+  $value: nth($align-content-values, $i);
+  $name: nth($align-content-values, $i);
+
+  @if $i >= 2 {
+    $name: getName(string.quote(nth($align-content-values, $i)), "flex");
+  }
+
+  @if $i >= 4 {
+    $name: getName(string.quote(nth($align-content-values, $i)), "space");
+  }
+
+  .content-#{$name} {
+    align-content: $value !important;
+  }
+}
+
+$align-items-values: stretch, center, baseline, flex-start, flex-end;
+@for $i from 1 through length($align-items-values) {
+  $value: nth($align-items-values, $i);
+  $name: nth($align-items-values, $i);
+
+  @if $i >= 4 {
+    $name: getName(string.quote(nth($align-items-values, $i)), "flex");
+  }
+
+  .items-#{$name} {
+    align-items: $value !important;
+  }
+}
+
+$align-self-values: auto, center, baseline, stretch, flex-start, flex-end;
+@for $i from 1 through length($align-self-values) {
+  $value: nth($align-self-values, $i);
+  $name: nth($align-self-values, $i);
+
+  @if $i >= 5 {
+    $name: getName(string.quote(nth($align-self-values, $i)), "flex");
+  }
+
+  .self-#{$name} {
+    align-self: $value !important;
+  }
+}
+
+$flex-operators: grow, shrink;
+@each $operator in $flex-operators {
+  @for $i from 0 through 5 {
+    .flex-#{$operator}-#{$i} {
+      flex-#{$operator}: $i !important;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
