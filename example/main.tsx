@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import "../dist/style.css"
+import "../css/purgescss.css"
 import App from "./App"
 
 import modules from "./modules"
