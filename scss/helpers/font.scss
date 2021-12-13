@@ -1,80 +1,82 @@
+@import "../utilities/initial-variables";
+
 .font-thin {
-  font-weight: 100;
+  font-weight: $hairline;
 }
 .font-extralight {
-  font-weight: 200;
+  font-weight: $thin;
 }
 .font-light {
-  font-weight: 300;
+  font-weight: $light;
 }
 .font-normal {
-  font-weight: 400;
+  font-weight: $normal;
 }
 .font-medium {
-  font-weight: 500;
+  font-weight: $medium;
 }
 .font-semibold {
-  font-weight: 600;
+  font-weight: $semibold;
 }
 .font-bold {
-  font-weight: 700;
+  font-weight: $bold;
 }
 .font-extrabold {
-  font-weight: 800;
+  font-weight: $800;
 }
 .font-black {
-  font-weight: 900;
+  font-weight: $black;
 }
 
 .text-xs {
-  font-size: 0.75rem;
+  font-size: $xs;
   line-height: 1rem;
 }
 .text-sm {
-  font-size: 0.875rem;
+  font-size: $sm;
   line-height: 1.25rem;
 }
 .text-base {
-  font-size: 1rem;
+  font-size: $base;
   line-height: 1.5rem;
 }
 .text-lg {
-  font-size: 1.125rem;
+  font-size: $lg;
   line-height: 1.75rem;
 }
 .text-xl {
-  font-size: 1.25rem;
+  font-size: $xl;
   line-height: 1.75rem;
 }
 .text-2xl {
-  font-size: 1.5rem;
+  font-size: $2xl;
   line-height: 2rem;
 }
 .text-3xl {
-  font-size: 1.875rem;
+  font-size: $3xl;
   line-height: 2.25rem;
 }
 .text-4xl {
-  font-size: 2.25rem;
+  font-size: $4xl;
   line-height: 2.5rem;
 }
 .text-5xl {
-  font-size: 3rem;
+  font-size: $5xl;
   line-height: 1;
 }
 .text-6xl {
-  font-size: 3.75rem;
+  font-size: $6xl;
   line-height: 1;
 }
 .text-7xl {
-  font-size: 4.5rem;
+  font-size: $7xl;
   line-height: 1;
 }
 .text-8xl {
-  font-size: 6rem;
+  font-size: $8xl;
   line-height: 1;
 }
 .text-9xl {
-  font-size: 8rem;
+  font-size: $9xl;
   line-height: 1;
 }

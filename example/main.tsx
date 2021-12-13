@@ -1,7 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import "../css/purgescss.css"
+// import "../css/purgescss.css"
+import "./styles.scss"
 import App from "./App"
 
 import modules from "./modules"
@@ -33,7 +34,6 @@ ReactDOM.render(
         />
       </Routes>
     </BrowserRouter>
-    ,
   </React.StrictMode>,
   document.getElementById("root")
 )

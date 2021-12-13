@@ -17,7 +17,7 @@ $white: hsl(0, 0%, 100%) !default;
 $orange: hsl(14, 100%, 53%) !default;
 $yellow: hsl(44, 100%, 77%) !default;
 $green: hsl(153, 53%, 53%) !default;
-$turquoise: hsl(171, 100%, 41%) !default;
+$grape: hsl(326, 62%, 50%) !default;
 $cyan: hsl(207, 61%, 53%) !default;
 $blue: hsl(229, 53%, 53%) !default;
 $purple: hsl(271, 100%, 71%) !default;
@@ -30,19 +30,29 @@ $family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto",
 $family-monospace: monospace !default;
 $render-mode: optimizeLegibility !default;
 
-$size-1: 3rem !default;
-$size-2: 2.5rem !default;
-$size-3: 2rem !default;
-$size-4: 1.5rem !default;
-$size-5: 1.25rem !default;
-$size-6: 1rem !default;
-$size-7: 0.75rem !default;
+$9xl: 8rem !default;
+$8xl: 6rem !default;
+$7xl: 4.5rem !default;
+$6xl: 4rem !default;
+$5xl: 3rem !default;
+$4xl: 2.25rem !default;
+$3xl: 1.875rem !default;
+$2xl: 1.5rem !default;
+$xl: 1.25rem !default;
+$lg: 1.125rem !default;
+$base: 1rem !default;
+$sm: 0.875rem !default;
+$xs: 0.75rem !default;
 
-$weight-light: 300 !default;
-$weight-normal: 400 !default;
-$weight-medium: 500 !default;
-$weight-semibold: 600 !default;
-$weight-bold: 700 !default;
+$hairline: 100 !default;
+$thin: 200 !default;
+$light: 300 !default;
+$normal: 400 !default;
+$medium: 500 !default;
+$semibold: 600 !default;
+$bold: 700 !default;
+$extrabold: 800 !default;
+$black: 900 !default;
 
 // Spacing
 $block-spacing: 1.5rem !default;
